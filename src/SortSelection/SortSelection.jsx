@@ -7,7 +7,7 @@ export const SortSelection = (prop) => {
     function handleOrder(event) 
     {
        !document.startViewTransition ? 
-        propsortkHandler(event.target.value) 
+        prop.sortkHandler(event.target.value) 
         :
         document.startViewTransition(() => {
             prop.sortHandler(event.target.value);
